@@ -41,7 +41,8 @@
     padding-right: 20px;
 } 
 
-.header3 a{
+.line1, .line2, .line3{
+    border: solid 1px black;
     display: none;
 }
 
@@ -150,7 +151,7 @@
 
 .card1{
     width: 432px;
-    height: 370px;
+    /* height: 370px; */
     background-color: white;
     margin: 5px;
     border-radius: 40px;
@@ -235,7 +236,7 @@
 
 .card1, .card2{
     width: 332px;
-    height: 270px;
+    /* height: 270px; */
 }
 
 .card1 img{
@@ -261,9 +262,6 @@
     display: none;
     }
 
-    .header3 a{
-        display: block;
-    }
    
     /****MAIN****/
 
@@ -291,6 +289,10 @@
 
     .cards{
         justify-content: center;
+    }
+
+    .cards1 p{
+        align-items: flex-start;
     }
 
     .card1 img{
