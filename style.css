@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
+
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: robot
 }
+
+
 
 .header1, .header2, .header3, .main, .cards{
     background-color: #F5F3EF;
@@ -11,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 5px;
 
 } 
 
@@ -41,13 +47,23 @@
     padding-right: 20px;
 } 
 
+.header3 a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .line1, .line2, .line3{
     border: solid 1px black;
     display: none;
 }
 
 
-.header3 button{
+.header3 a{
     justify-items: flex-end;
     color: white;
     background-color: black;
@@ -55,6 +71,43 @@
     border: none;
     width: 130px;
     height: 48px;
+}
+
+li{
+    list-style: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3) 1fr;
+    grid-template-rows: 80px;
+
+} 
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F3EF;
+}
+
+.hamburger{
+    display: none;
+} 
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.nav-link:hover{
+    color: #FEBD2F;
 }
 
 /******** MAIN ******/
@@ -75,11 +128,13 @@
 
 
 .main h2{
+    text-align: center;
     font-size: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .main p{
+    text-align: center;
     color: #646464;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
@@ -93,8 +148,7 @@
 
 .main img{
     padding-top: 20px;
-    width: 580px;
-    height: 400px;
+    width: 50%;
     position: relative;
     float: right;
     padding-bottom: 10px;
@@ -193,41 +247,35 @@
     height: 80px;
 }
 
-
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(3) 1fr;
-    grid-template-rows: 80px
-
-} 
-
-/*Grid grid container not working/*/
-
-
 @media (max-width: 830px) {
 
-.header3
+.header1{
+    display: flex;
+}
 
-.main h2, p{
+.main{
  
     justify-content: center;
     align-items: center;
     width: 100%;
-    text-align: center;
 }
 
-.main h2{
+.main > h2{
     width: 100%;
     text-align: center;
 }
 
-.main{
+.main > p{
+    text-align: center;
+
+}
+
+/* .main{
     flex-wrap: nowrap;
     height: 800px;
     align-items: center;
     width: 100%;
-}
+} */
 
 .main img{
     width: 650px;
@@ -250,18 +298,63 @@
    /******HEADER******/
 
     .header1 a{
-    display: none;
+        /* display: none; */
     }
-
+    
     .header2{
         justify-content: center;
         padding-right: 120px;
     }
-
-    .header3{
-    display: none;
+    
+    .header3 a{
+        display: none;
+    }
+    
+    /******* NAV-HEADER *******/
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #fff; */
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    /***************/
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /*****************/
    
     /****MAIN****/
 
@@ -291,8 +384,12 @@
         justify-content: center;
     }
 
-    .cards1 p{
-        align-items: flex-start;
+    /* .cards1 p{
+        justify-content: /*****/
+
+    .card1{
+        display: flex;
+        flex-direction: column;
     }
 
     .card1 img{
@@ -302,17 +399,10 @@
     }
 
     .card1,.card2{
-        width: 420px;
+        width: 420px
     }
 
-    .card1 img{
-        position: relative;
-        left: 120px;
-            
-    }
-
-    .card1 button{
-        position: relative;
-
-    }
+    /* .card2{
+        height: 283px;
+    } */
 }
