@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-
-
 
 *{
-    font-family: robot
+    font-family: 'Roboto', sans-serif;
 }
+  
 
 .grid-container{
     display: grid;
@@ -29,7 +27,7 @@
     text-decoration: none;
     padding-inline: 15px;
     color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-weight: 500px;
     margin-bottom: 20px;
 
@@ -58,7 +56,7 @@
 
 .header3 a{
     text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-weight: 500px;
     display: flex;
     justify-content: center;
@@ -143,13 +141,13 @@ li{
 .main h2{
     text-align: center;
     font-size: 50px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 .main p{
     text-align: center;
     color: #646464;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-size: 24px;
 }
 
@@ -161,7 +159,7 @@ li{
 
 .main img{
     padding-top: 20px;
-    width: 48%;
+    width: 45%;
     position: relative;
     float: right;
     margin-bottom: 60px;
@@ -405,7 +403,7 @@ li{
     }
 
     .card2{
-        height: 200px;
+        height: 300px;
     }
 
 }
