@@ -131,9 +131,7 @@ li{
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(2,1fr);
-    /* flex-direction: column;
-    flex-wrap: wrap; */
-    /* justify-content: center; */
+
 }
 
 
@@ -148,14 +146,7 @@ li{
     font-size: 24px;
 }
 
-/* .main h2, p{
-    width: 45%;
-    float: left;
-} */
-
-
 .main img{
-    /* padding-top: 20px; */
     width: 100%;
     margin-bottom: 60px;
     align-self: center;
@@ -261,22 +252,6 @@ li{
     grid-template-columns: 1fr;
 }
 
-/* .main > h2{
-    width: 100%;
-    text-align: center;
-}
-
-.main > p{
-    text-align: center;
-
-}
-
-
-.main img{
-    width: 650px;
-    height: 420px;
-} */
-
 .card1, .card2{
     width: 332px;
 }
@@ -307,10 +282,9 @@ li{
         position: fixed;
         left: -120%;
         top: 5rem;
-        background-color: white;
+        background-color: #F5F3EF;
         display: flex;
         flex-direction: column;
-        /* background-color: #fff; */
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -339,7 +313,7 @@ li{
         cursor: pointer;
     }
 
-    /***************/
+    /********MOTION*******/
 
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
