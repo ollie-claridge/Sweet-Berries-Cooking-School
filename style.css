@@ -32,11 +32,6 @@
 
 }
 
-.text-content{
-    display: flex;
-    flex-direction: column;
-}
-
 .header2{
     grid-column: 2/3;
     display: flex;
@@ -134,6 +129,10 @@ li{
 
 }
 
+.text-content{
+    display: flex;
+    flex-direction: column;
+}
 
 .main h2{
     text-align: center;
