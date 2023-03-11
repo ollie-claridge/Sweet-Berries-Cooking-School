@@ -1,9 +1,10 @@
-
+/* There are 2 fonts being used in the Sigma file but you have only used one of them. */
 *{
     font-family: 'Roboto', sans-serif;
 }
   
-
+/* Grid template areas haven’t been used to correctly display items at different positions in different viewports.
+This was a requirement in the rubric. */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -153,6 +154,12 @@ li{
 
 /****Cards****/
 
+/* You have used CSS Grid with Flexbox but there's room for improvement.
+Your main layout is a Grid but you have excluded the nav-bar from the grid container. */
+
+/* You made your cards a flexbox. You will need to do more coding to make your flexbox have 3 columns on laptop devices.
+You haven't acheved having three columns on laptop devices.
+This is a good place to make a Grid. Because we have rows in a grid-like structure. */
 .cards{
     grid-column: 1/4;
     grid-template-rows: 3/4;
@@ -161,7 +168,6 @@ li{
     justify-content: space-around;
 
 }
-
 .card2{
     width: 432px;
     height: 370px;
@@ -211,7 +217,9 @@ li{
     margin-bottom: 40px;
 }
 
-
+/* Even-though it looks like you achieved placing the logo above the card, it is not the proper way.
+You should give the icon a position of absolute, this will bring the icon out of the document flow.
+Then you need to give the card a position of relative in order for the icon to be placed in relative to the card. */
 .card1 img{
     position: relative;
     left: 100px;
